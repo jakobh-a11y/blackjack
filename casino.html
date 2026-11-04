@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blackjack</title>
+    <link rel="stylesheet" href="Casino.css">
+</head>
+<body>
+    <main>
+        <h1>Blackjack</h1>
+        <p id="bankroll">Your bankroll: $100</p>
+        <label for="bet">Bet amount ($)</label>
+        <input id="bet" type="number" min="1" step="1" value="10">
+        <button id="start-round" type="button">Start round</button>
+
+        <section aria-label="Blackjack scores">
+            <p id="score">Your score: 0</p>
+            <p id="bot-score">Bot score: -</p>
+            <p id="card">No cards dealt yet.</p>
+        </section>
+        <p id="message">Choose a bet and start a round.</p>
+        <button id="hit" type="button" disabled>Hit</button>
+        <button id="stand" type="button" disabled>Stand</button>
+        <button id="new-game" type="button">New game</button>
+    </main>
+    <script type="module" src="/src/blackjack.js"></script>
+</body>
+</html>
